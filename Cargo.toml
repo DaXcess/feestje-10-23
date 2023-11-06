@@ -1,0 +1,23 @@
+[package]
+name = "feestje-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = { version = "1.0.75", features = ["backtrace"] }
+argh = "0.1.12"
+embedded-graphics = "0.8.1"
+hidapi = "2.3.3"
+image = "0.24.6"
+libcamera = "0.2.2"
+rand = "0.8.5"
+reqwest = { version = "0.11.22", default-features = false, features = [
+  "blocking",
+  "rustls-tls",
+] }
+rpi-led-panel = "0.5.0"
+streamdeck-hid-rs = { version = "0.2.0", git = "https://github.com/DaXcess/streamdeck-hid-rs", branch = "feat/streamdeck-mk2" }
+text-to-png = "0.2.0"
+time = "0.3.29"
